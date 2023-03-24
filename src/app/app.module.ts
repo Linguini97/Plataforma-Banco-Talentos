@@ -42,6 +42,7 @@ import {MatIconModule} from '@angular/material/icon'
     FooterComponent,
     TableComponent,
     FormsJovemComponent,
+  
 
   ],
   imports: [

@@ -9,51 +9,67 @@
     <div class="tittle">
       <p>Endereço</p>
     </div>
-    <mat-form-field>
+    <mat-form-field class="form-input">
       <input matInput  placeholder="Cep" name="cep">
     </mat-form-field>
 
-    <mat-form-field>
+    <mat-form-field class="form-input">
       <input matInput placeholder="Estado" name="estado">
     </mat-form-field>
 
-    <mat-form-field>
+    <mat-form-field class="form-input">
       <input matInput placeholder="Cidade" name="cidade">
     </mat-form-field>
-
+      
+    
     <div class="tittle">
+      
       <p>Informações de contato</p>
     </div>
 
-    <mat-form-field>
+    <mat-form-field class="form-input">
       <input matInput type="tel" placeholder="Celular">
     </mat-form-field>
 
-    <mat-form-field>
+    <mat-form-field class="form-input">
       <input matInput type="email" placeholder="Email">
     </mat-form-field>
 
-    <mat-form-field>
+    <mat-form-field class="form-input">
       <input matInput placeholder="Linkedin">
     </mat-form-field> 
-
+   
     <div class="tittle">
       <p>Informações acadêmica</p>
     </div>
 
-    <mat-form-field>
+    <mat-form-field class="form-input">
       <input matInput placeholder="Faculdade">
     </mat-form-field>
 
-    <mat-form-field>
+    <mat-form-field class="form-input">
       <input matInput placeholder="Curso">
     </mat-form-field> 
-    
-    <mat-form-field>
+
+    <mat-form-field class="form-input">
       <input matInput  placeholder="Ano de conclusão">
     </mat-form-field> 
+
+    <div class="tittle">
+      <p>Resumo</p>
+    </div>
     
+    <p>Faça uma breve descrição sobre você e seus objetivos</p>
+    <mat-form-field class="form-input-text" >
+      <mat-label>Faça um breve resumo sobre você e seus objetivos</mat-label>
+      <textarea matInput name="Resumo" rows="8" maxlength="500" autofo></textarea>
+    </mat-form-field>
+    
+    
+    <div class="button">
       <button mat-raised-button color="primary"> Salvar</button>
+    </div>
+      
       
 
 </mat-card>

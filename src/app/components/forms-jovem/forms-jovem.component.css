@@ -5,48 +5,53 @@ form{
     align-items: center;
 }
 
-mat-form-field{
-    display: flex;
-    height: 60px;
-    width: 500px;
+.form-input{
+    height: 70px;
+    width: 600px;
 }
 
 .tittle{
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
-    font-size: 12px;
+    font-size: 15px;
     line-height: 18px;
     display: flex;
     align-items: center;
     text-align: center;
     
     color: #000000;
+    border-bottom: 1px solid #000000;
+    margin: 10px;
 
     
     
 }
 
 .button{
-    display: flex;
-    align-self: center;
-    gap: 10px;
+    margin: 20px;
+    
 }
 .container{
+   
     display: flex;
     justify-content: center;
     background-color: rgb(246, 246, 246);
-    height: 1200px
+    height: auto
 }
 
 .card{
     display: flex;
     align-items: center;
     margin-top: 200px;
-    
-    width: 600px;
- 
-    height: 1200px;
+    width: 700px;
+    height: auto;
     padding-top:  80px;
     background-color: rgb(255, 255, 255);
+    margin-bottom: 30px;
+}
+
+.form-input-text{
+    width: 600px;
+    height: 300px;
 }

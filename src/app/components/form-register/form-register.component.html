@@ -1,1 +1,54 @@
-<p>form-register works!</p>
+<header>
+    <img src="../../../assets/logo-semear.png" >
+</header>
+    <div class="container">
+    
+        <mat-card class="card">
+            <h1>Registrar</h1>
+
+            <mat-form-field class="form-field">
+                <mat-label>Nome completo</mat-label>
+                <input matInput  name="nome" class="form-input" >
+                <mat-icon matSuffix> person</mat-icon>
+            </mat-form-field>
+            
+            <mat-form-field class="form-field">
+                <mat-label>Email</mat-label>
+                <input matInput type="email" name="email" class="form-input" >
+                <mat-icon matSuffix> email</mat-icon>
+            </mat-form-field>
+
+            <mat-form-field class="form-field">
+                <mat-label>CPF</mat-label>
+                <input matInput  name="CPF" class="form-input" >
+                <mat-icon matSuffix>portrait</mat-icon>
+            </mat-form-field>
+    
+            <mat-form-field class="form-field">
+                <mat-label>Senha</mat-label>
+                <input matInput type="password" name="senha" class="form-input" >
+                <mat-icon matSuffix> vpn_key</mat-icon>
+            </mat-form-field>
+
+            <mat-form-field class="form-field">
+                <mat-label>Confirmar senha</mat-label>
+                <input matInput type="password" name="confirmar-senha" class="form-input" >
+                <mat-icon matSuffix> vpn_key</mat-icon>
+            </mat-form-field>
+            
+            <div class="button">
+                <p>Ao clicar em Aceite e cadastre-se, você aceita as <a href="">Políticas de privacidade </a>
+                    do Instituto Semear.</p>
+                
+                <button type="submit"  mat-raised-button color="primary">Registrar</button>
+                <div class="login">
+                <label for="button-login" > Já tem uma conta?</label>
+                <a routerLink="/login" class="button-login">Entrar</a> 
+                </div>
+                
+            </div>
+        
+        </mat-card>
+    </div>
+    
+

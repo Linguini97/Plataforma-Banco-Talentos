@@ -22,6 +22,7 @@ import{MatInputModule} from '@angular/material/input'
 import {MatSnackBarModule} from '@angular/material/snack-bar'
 import {MatButtonModule} from '@angular/material/button'
 import {MatCardModule} from '@angular/material/card';
+import {MatIconModule} from '@angular/material/icon'
 
 
 
@@ -56,6 +57,7 @@ import {MatCardModule} from '@angular/material/card';
     MatSnackBarModule,
     MatButtonModule,
     MatCardModule,
+    MatIconModule,
    
     
    

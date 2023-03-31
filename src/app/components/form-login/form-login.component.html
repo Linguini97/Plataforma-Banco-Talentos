@@ -14,8 +14,10 @@
     
             <mat-form-field class="form-field">
                 <mat-label>Senha</mat-label>
-                <input matInput type="password" name="senha" class="form-input" >
-                <mat-icon matSuffix> vpn_key</mat-icon>
+                <input matInput [type]="hide ? 'password' : 'text'" name="senha" class="form-input" >
+                <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                    <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                  </button>
             </mat-form-field>
             
             <div class="button">

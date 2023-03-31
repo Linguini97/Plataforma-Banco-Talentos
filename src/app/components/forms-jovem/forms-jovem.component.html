@@ -4,7 +4,7 @@
 
     
     <div>
-      <h1>Currículo</h1>
+      <h1>Informações Pessoais</h1>
     </div>
     <div class="tittle">
       <p>Endereço</p>
@@ -43,16 +43,28 @@
       <p>Informações acadêmica</p>
     </div>
 
-    <mat-form-field class="form-input">
-      <input matInput placeholder="Faculdade">
+    <mat-form-field  class="form-input">
+      <mat-select placeholder="Faculdade">
+        <mat-option *ngFor="let faculdade of faculdades" value="" >{{faculdade.name}}</mat-option>
+        
+      </mat-select>
     </mat-form-field>
 
     <mat-form-field class="form-input">
       <input matInput placeholder="Curso">
     </mat-form-field> 
 
+    <mat-form-field  class="form-input">
+      <mat-select placeholder="Status do curso">
+        <mat-option value="option">Concluído</mat-option>
+        <mat-option value="option">Em andamento</mat-option>
+        <mat-option value="option">Pausado</mat-option>
+      </mat-select>
+    </mat-form-field>
+
     <mat-form-field class="form-input">
       <input matInput  placeholder="Ano de conclusão">
+      <mat-hint>DD/MM/AAAA</mat-hint>
     </mat-form-field> 
 
     <div class="tittle">
@@ -61,7 +73,8 @@
 
     <mat-form-field class="form-input-text" >
       <mat-label>Faça um breve resumo sobre você e seus objetivos</mat-label>
-      <textarea matInput name="Resumo" rows="10" maxlength="500" autofo></textarea>
+      <textarea matInput name="Resumo" rows="10" #message maxlength="500" autofo></textarea>
+      <mat-hint align="end">{{message.value.length}} / 500</mat-hint>
     </mat-form-field>
     
     
@@ -69,7 +82,7 @@
       <button mat-raised-button color="primary"> Salvar</button>
     </div>
       
-      
+    
 
 </mat-card>
 

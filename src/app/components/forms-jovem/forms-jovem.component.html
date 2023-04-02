@@ -50,9 +50,13 @@
       </mat-select>
     </mat-form-field>
 
-    <mat-form-field class="form-input">
-      <input matInput placeholder="Curso">
-    </mat-form-field> 
+    <mat-form-field  class="form-input">
+      <mat-select placeholder="Curso">
+        <mat-option *ngFor="let curso of cursos" value="" >{{curso.name}}</mat-option>
+        
+      </mat-select>
+    </mat-form-field>
+
 
     <mat-form-field  class="form-input">
       <mat-select placeholder="Status do curso">
@@ -64,7 +68,7 @@
 
     <mat-form-field class="form-input">
       <input matInput  placeholder="Ano de conclusão">
-      <mat-hint>DD/MM/AAAA</mat-hint>
+      <mat-hint>MM/AAAA</mat-hint>
     </mat-form-field> 
 
     <div class="tittle">

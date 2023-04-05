@@ -25,6 +25,9 @@ import {MatCardModule} from '@angular/material/card';
 import {MatIconModule} from '@angular/material/icon';
 import {MatSelectModule} from '@angular/material/select';
 import {MatDatepickerModule} from '@angular/material/datepicker';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
 
 
 
@@ -63,6 +66,8 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
     MatIconModule,
     MatSelectModule,
     MatDatepickerModule,
+    ReactiveFormsModule,
+    HttpClientModule
    
     
    

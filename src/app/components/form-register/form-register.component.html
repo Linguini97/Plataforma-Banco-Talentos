@@ -1,54 +1,55 @@
 <header>
     <img src="../../../assets/logo-semear.png" >
 </header>
-    <div class="container">
+<div class="container">
     
-        <mat-card class="card">
-            <h1>Registrar</h1>
-
+    <mat-card class="card">
+        <h1>Registrar</h1>
+        <form [formGroup]="form" (submit)="onSubmit()">
             <mat-form-field class="form-field">
                 <mat-label>Nome completo</mat-label>
-                <input matInput  name="nome" class="form-input" >
+                <input matInput  formControlName="nome" class="form-input" >
                 <mat-icon matSuffix> person</mat-icon>
             </mat-form-field>
             
             <mat-form-field class="form-field">
                 <mat-label>Email</mat-label>
-                <input matInput type="email" name="email" class="form-input" >
+                <input matInput type="email" formControlName="email" class="form-input" >
                 <mat-icon matSuffix> email</mat-icon>
             </mat-form-field>
-
             <mat-form-field class="form-field">
                 <mat-label>CPF</mat-label>
-                <input matInput  name="CPF" class="form-input" >
+                <input matInput  formControlName="CPF" class="form-input" >
                 <mat-icon matSuffix>portrait</mat-icon>
             </mat-form-field>
-    
-            <mat-form-field class="form-field">
+            
+            <mat-form-field class="form-field" >
                 <mat-label>Senha</mat-label>
-                <input matInput type="password" name="senha" class="form-input" >
+                <input matInput type="password" formControlName="senha" class="form-input" >
                 <mat-icon matSuffix> vpn_key</mat-icon>
             </mat-form-field>
-
-            <mat-form-field class="form-field">
+            
+            <mat-form-field class="form-field" [ngClass]="{'mat-form-field-invalid': !senhaConfirmada}"> 
                 <mat-label>Confirmar senha</mat-label>
-                <input matInput type="password" name="confirmar-senha" class="form-input" >
+                <input matInput type="password" name="confirmar-senha" formControlName="confirmarSenha" class="form-input" required>
                 <mat-icon matSuffix> vpn_key</mat-icon>
+                <mat-error *ngIf="!senhaConfirmada">As senhas não conferem</mat-error>
             </mat-form-field>
             
             <div class="button">
                 <p>Ao clicar em cadastre-se, você aceita as <a href="">Políticas de privacidade </a>
                     do Instituto Semear.</p>
-                
-                <button type="submit"  mat-raised-button color="primary">Registrar</button>
-                <div class="login">
-                <label for="button-login" > Já tem uma conta?</label>
-                <a routerLink="/login" class="button-login">Entrar</a> 
+                    
+                    <button type="submit"  mat-raised-button color="primary">Registrar</button>
+                    <div class="login">
+                        <label for="button-login" > Já tem uma conta?</label>
+                        <a routerLink="/login" class="button-login">Entrar</a> 
+                    </div>
+                    
                 </div>
                 
-            </div>
+            </form>
+            </mat-card>
+        </div>
         
-        </mat-card>
-    </div>
-    
-
+        
